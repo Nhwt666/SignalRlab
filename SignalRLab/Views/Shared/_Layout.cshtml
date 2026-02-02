@@ -5,7 +5,7 @@
     <title>@ViewData["Title"] - SignalRLab</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap CSS (ĐÚNG PATH) -->
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
@@ -22,9 +22,13 @@
         @RenderBody()
     </div>
 
-    <!-- JS (ĐÚNG PATH) -->
+    <!-- Bootstrap JS -->
     <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="~/lib/microsoft/signalr/dist/browser/signalr.min.js"></script>
+
+    <!-- ✅ SignalR CLIENT (CDN – QUAN TRỌNG) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.0/signalr.min.js"></script>
+
+    <!-- App JS -->
     <script src="~/js/site.js"></script>
 
     @RenderSection("Scripts", required: false)
